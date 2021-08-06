@@ -1,0 +1,18 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /
+
+spring:
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          dataport-beispiel:
+            signing:
+              credentials:
+                - private-key-location: "classpath:credentials/private.key"
+                  certificate-location: "classpath:credentials/public.crt"
+            identityprovider:
+              entity-id: http://idp:8080/auth/realms/DSecureTest
+              metadata-uri: http://idp:8080/auth/realms/DSecureTest/protocol/saml/descriptor
