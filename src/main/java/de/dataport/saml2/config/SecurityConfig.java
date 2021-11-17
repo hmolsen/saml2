@@ -1,4 +1,4 @@
-package de.dataport.saml2.config;================
+package de.dataport.saml2.config;
 
 
 import org.springframework.context.annotation.Configuration;
