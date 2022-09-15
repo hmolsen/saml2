@@ -8,11 +8,11 @@ spring:
     saml2:
       relyingparty:
         registration:
-          dataport-beispiel:
+          sosec-beispiel:
             signing:
               credentials:
                 - private-key-location: "classpath:credentials/private.key"
                   certificate-location: "classpath:credentials/public.crt"
             identityprovider:
-              entity-id: http://idp:8080/auth/realms/DSecureTest
-              metadata-uri: http://idp:8080/auth/realms/DSecureTest/protocol/saml/descriptor
+              entity-id: http://idp:8080/something
+              metadata-uri: http://idp:8080/something/saml/descriptor
