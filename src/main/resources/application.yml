@@ -14,5 +14,5 @@ spring:
                 - private-key-location: "classpath:credentials/private.key"
                   certificate-location: "classpath:credentials/public.crt"
             identityprovider:
-              entity-id: http://idp:8080/something
               metadata-uri: http://idp:8080/something/saml/descriptor
+              entity-id: http://idp:8080/something
